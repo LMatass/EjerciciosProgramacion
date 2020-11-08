@@ -1,7 +1,7 @@
 package sample;
 
 import java.util.Scanner;
-
+//Fes un programa que ens digui quants de dígits té un nombre introduït per teclat.
 public class EjercicioNueve {
     public static void main (String [] args){
         System.out.println("Introduzca un numero ");

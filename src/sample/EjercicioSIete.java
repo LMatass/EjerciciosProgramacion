@@ -1,5 +1,8 @@
 package sample;
 import java.util.Scanner;
+/*Realitza el control d’accés a una caixa forta. La combinació ha de ser de 4 xifres. El programa ens demanarà la combinació. Si no encertem,
+ ens mostrarà el missatge “Ho sentim, combinació incorrecta” i tornarà a demanar la combinació. Si encertem ens mostrarà “Combinació correcta” i acabarà.
+ Tindrem 4 oportunitats per encertar la combinació.*/
 public class EjercicioSIete {
     public static void main (String[] args){
         System.out.println("Introduzca contraseña");
