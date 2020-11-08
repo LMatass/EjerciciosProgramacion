@@ -11,12 +11,13 @@ public class EjercicioDiez {
             do {
                 System.out.println("Introduzca un numero ");
                 double numSc = sc.nextDouble();
+
                 if (numSc < 0)
                     respuesta = true;
-                numGuardado += numSc;
-                contador++;
+                    numGuardado += numSc;
+                    contador++;
             }while (!respuesta);{
-            System.out.println("La media es " + numGuardado / contador);
+                System.out.println("La media es " + numGuardado / contador);
         }
     }
 }
