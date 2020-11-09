@@ -1,7 +1,10 @@
 package EjerciciosCondicionales;
-
 import java.util.Scanner;
+/*
+Escriu un programa que calculi el sou setmanal d’un treballador tenint en compte que les hores ordinàries (40 primeres hores de treball) es paguen a 12€/hora.
+A partir de l’hora 41, es paguen a 16€/hora.
 
+ */
 public class Ejercicio4 {
     public static void main (String [] args){
         //Lectura teclado
