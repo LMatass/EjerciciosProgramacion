@@ -1,4 +1,4 @@
-package sample;
+package EjerciciosBucles;
 
 import java.util.Scanner;
 //Fes un programa que ens digui quants de dígits té un nombre introduït per teclat.

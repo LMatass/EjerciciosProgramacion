@@ -1,4 +1,4 @@
-package sample;
+package EjerciciosBucles;
 import java.util.Scanner;
 /*Fes un programa que calculi la mitjana d’un conjunt de nombres introduïts per teclat per l’usuari.
 A priori no sabem quant de nombres hi haurà, però sabem que l’usuari indicarà que no vol inserir més nombres quan introdueixi un nombre negatiu. */

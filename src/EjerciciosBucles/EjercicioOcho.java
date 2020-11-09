@@ -1,4 +1,4 @@
-package sample;
+package EjerciciosBucles;
 
 import java.util.Scanner;
 //Fes un programa que demana un nombre de 0 a 9 i que a continuació mostri la taula de multiplicació corresponent al nombre inserit.
