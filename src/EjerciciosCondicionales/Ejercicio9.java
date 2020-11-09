@@ -1,6 +1,6 @@
 package EjerciciosCondicionales;
 import java.util.Scanner;
-//Fes un programa que resolgui una eqüació de segon grau (tipus ax2+bx+c=0
+//Fes un programa que resolgui una equació de segon grau (tipus ax2+bx+c=0
 public class Ejercicio9 {
     public static void main (String[] args){
         System.out.println("Calculadora ecuaciones de 2grado tipo ax2+bx=c=0");
