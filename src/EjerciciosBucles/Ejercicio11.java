@@ -2,7 +2,7 @@ package EjerciciosBucles;
 import java.util.Scanner;
 /*Escriu un programa que mostri en tres columnes diferents, el quadrat i el cub dels 5 primers nombres sencers que l’usuari hagi introduït per teclat.
 */
-public class EjercicioOnce {
+public class Ejercicio11 {
     public static void main (String[] args){
         int[] array = new int[5];
         //Bucle for lee valores scanner y los añade a array
