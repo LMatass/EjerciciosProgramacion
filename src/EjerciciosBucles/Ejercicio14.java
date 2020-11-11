@@ -25,6 +25,7 @@ public class Ejercicio14 {
         int num1 = sc.nextInt();
         System.out.println("Introduzca otro numero entero y positivo");
         int num2 = sc.nextInt();
-
+        int resultadoPotencia = (int) Math.pow(num1, num2);
+        System.out.println(resultadoPotencia);
     }
 }
