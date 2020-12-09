@@ -15,7 +15,7 @@ package EjerciciosClases;/*
 */
 
 public class Ejercicio1 {
-    public class PilotDeFormula1 {
+    public static class PilotDeFormula1 {
             //Atributos de clase
             String nombre;
             String equipo;
@@ -23,7 +23,7 @@ public class Ejercicio1 {
             int dorsal;
             int polePosition;
             //Instancia y metodo posicion.
-            public void Posicion(int n){
+            public boolean Posicion(int n){
                 if (n == 1) {//Si n es igual a 1, sumar una pole al Piloto y posicion es igual a n.
                     polePosition++;
                     int posicion = n;
@@ -31,9 +31,12 @@ public class Ejercicio1 {
                 else {
                     int posicion = n;
                 }
+                return false;
             }
     }
     public static void main(String[] args) {
-        System.out.println();
+        PilotDeFormula1 piloto = new PilotDeFormula1();
+        piloto.Posicion(10);
+        System.out.println(piloto);
     }
 }
