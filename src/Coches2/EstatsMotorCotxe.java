@@ -13,7 +13,7 @@ package Coches2;/*
 
 */
 
-public enum EstatsMotorCotxe {
-    EnMarxa,
-    Aturat;
+    public enum EstatsMotorCotxe {
+        EnMarxa,
+        Aturat;
 }
