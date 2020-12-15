@@ -61,5 +61,4 @@ public class CotxeSegonaPart_Lluc_Matas extends Cotxe_Lluc_Matas{
             throw new Exception("Su coche no es manual porfavor use el metodo que necesita su coche");//Lanza un error si se intenta usar un metodo que no corresponde, ejemplo usar canviarMarxaAutomatic en un manual
         }
     }
-
 }
