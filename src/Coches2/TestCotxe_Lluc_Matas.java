@@ -15,11 +15,17 @@ package Coches2;/*
 
 public class TestCotxe_Lluc_Matas {
     public static void main(String[] args) {
-        Cotxe_Lluc_Matas cotxe1 = new Cotxe_Lluc_Matas("Opel","Corsa", TipusCanvi.CanviAutomatic, EstatsMotorCotxe.Aturat);
+        CotxeSegonaPart_Lluc_Matas cotxe1 = new CotxeSegonaPart_Lluc_Matas("Opel","Corsa", TipusCanvi.CanviAutomatic, EstatsMotorCotxe.Aturat);
         System.out.println(cotxe1.marca);
         System.out.println(cotxe1.model);
         System.out.println(cotxe1.tipuscanvi);
         System.out.println(cotxe1.estatsMotorCotxe);
-        System.out.println(cotxe1.getEstatsMotorCotxe());
+        cotxe1.canviarMarxaAutomatic('+');
+        System.out.println(cotxe1.getMarxaAutomaticActual());
+        cotxe1.canviarMarxaAutomatic('-');
+        System.out.println(cotxe1.getMarxaAutomaticActual());
+        cotxe1.canviarMarxaAutomatic('-');
+        System.out.println(cotxe1.getMarxaAutomaticActual());
+
     }
 }

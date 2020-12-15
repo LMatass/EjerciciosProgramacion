@@ -16,5 +16,5 @@ package Coches2;/*
 public enum marxaAutomatic{
     F,
     N,
-    R;
+    R
 }
