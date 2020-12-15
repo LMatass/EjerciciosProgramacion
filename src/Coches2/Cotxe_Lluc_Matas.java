@@ -16,6 +16,8 @@ package Coches2;/*
 //Creacion de la subclase, clase padre Cotxe abstracte
 public class Cotxe_Lluc_Matas extends CotxeAbstracte implements InterfaceCotxe {
 
+
+
     protected EstatsMotorCotxe estatsMotorCotxe;                    //Declaracion de la variable del estado del motor, de la clase EstatsMotorCotxe
 
     public Cotxe_Lluc_Matas(String marca, String model, TipusCanvi tipuscanvi, EstatsMotorCotxe estatsMotorCotxe ) { //Creacion del objeto con sus atributos
@@ -34,6 +36,9 @@ public class Cotxe_Lluc_Matas extends CotxeAbstracte implements InterfaceCotxe {
 
     public EstatsMotorCotxe getEstatsMotorCotxe() {
         return estatsMotorCotxe;                                    //COn este getter, conseguimos el estado del motor del coche
+    }
+    public void setEstatsMotorCotxe(EstatsMotorCotxe estatsMotorCotxe) {
+        this.estatsMotorCotxe = estatsMotorCotxe;
     }
 
     @Override
