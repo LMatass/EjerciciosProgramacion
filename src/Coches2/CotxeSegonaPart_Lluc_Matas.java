@@ -26,39 +26,39 @@ public class CotxeSegonaPart_Lluc_Matas extends Cotxe_Lluc_Matas{
 
     public void canviarMarxaAutomatic(char a) throws Exception {
 
-        if (TipusCanvi.CanviAutomatic.equals(tipuscanvi)){
-            if (a == '+' && estatsMotorCotxe.equals(EstatsMotorCotxe.EnMarxa) && contador < 7){
+        if (TipusCanvi.CanviAutomatic.equals(tipuscanvi)){//Condicional If que comprueba que el cambio es automatico
+            if (a == '+' && estatsMotorCotxe.equals(EstatsMotorCotxe.EnMarxa) && contador < 3){//Condicional If que comprueba que el motor del coche este encendido y que el numero de marchas no supere el limite
                 contador++;
-                this.marxaAutomaticActual = marxesAutomatic[contador];
+                this.marxaAutomaticActual = marxesAutomatic[contador];//Asigna al valor de marcha actual el valor de la array en la posicion contador.
             }
-            else if (a == '-' && estatsMotorCotxe.equals(EstatsMotorCotxe.EnMarxa)){
+            else if (a == '-' && estatsMotorCotxe.equals(EstatsMotorCotxe.EnMarxa) && contador > 0){//Condicional If que comprueba que el motor del coche este encendido y que el numero de marchas no es menor a 0
                 contador--;
-                this.marxaAutomaticActual = marxesAutomatic[contador];
+                this.marxaAutomaticActual = marxesAutomatic[contador];//Asigna al valor de marcha actual el valor de la array en la posicion contador.
             }else {
-                throw new Exception("Introduzca una marcha adecuada");
+                throw new Exception("Introduzca una marcha adecuada o encienda el coche");//Lanza un error en el caso de que el caracter de la marcha no sea correcto o que el coche no este encendido
             }
         }
         else {
-            throw new Exception("El motor no esta encendido, porfavor encienda el motor");
+            throw new Exception("Su coche no es automatico porfavor use el metodo que necesita su coche");//Lanza un error si se intenta usar un metodo que no corresponde, ejemplo usar canviarMarxaManual en un automatico
         }
     }
 
     public void canviarMarxaManual(char a) throws Exception {
 
-        if (TipusCanvi.CanviManual.equals(tipuscanvi)){
-            if (a == '+' && estatsMotorCotxe.equals(EstatsMotorCotxe.EnMarxa) && contador < 7){
+        if (TipusCanvi.CanviManual.equals(tipuscanvi)){//Condicional If que comprueba que el cambio es automatico
+            if (a == '+' && estatsMotorCotxe.equals(EstatsMotorCotxe.EnMarxa) && contador < 7){//Condicional If que comprueba que el motor del coche este encendido y que el numero de marchas no supere el limite
                 contador++;
-                this.marxaManualActual = marxaManual[contador];
+                this.marxaManualActual = marxaManual[contador];//Asigna al valor de marcha actual el valor de la array en la posicion contador.
             }
-            else if (a == '-' && estatsMotorCotxe.equals(EstatsMotorCotxe.Aturat)){
+            else if (a == '-' && estatsMotorCotxe.equals(EstatsMotorCotxe.Aturat) && contador > 0){ //Condicional If que comprueba que el motor del coche este encendido y que el numero de marchas no es menor a 0
                 contador--;
-                this.marxaManualActual = marxaManual[contador];
+                this.marxaManualActual = marxaManual[contador]; //Asigna al valor de marcha actual el valor de la array en la posicion contador.
             }else {
-                throw new Exception("Introduzca una marcha adecuada");
+                throw new Exception("Introduzca una marcha adecuada o encienda el coche"); //Lanza un error en el caso de que el caracter de la marcha no sea correcto o que el coche no este encendido
             }
         }
         else {
-            throw new Exception("El motor no esta encendido, porfavor encienda el motor");
+            throw new Exception("Su coche no es manual porfavor use el metodo que necesita su coche");//Lanza un error si se intenta usar un metodo que no corresponde, ejemplo usar canviarMarxaAutomatic en un manual
         }
     }
 
