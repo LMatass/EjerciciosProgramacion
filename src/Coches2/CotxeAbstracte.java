@@ -22,13 +22,14 @@ public abstract class CotxeAbstracte implements InterfaceCotxe {
         protected marxesManual marxaManualActual;
         protected int velocidadActual;
 
+
     public CotxeAbstracte(String marca, String model, TipusCanvi tipuscanvi) {
             this.marca=marca;
             this.model=model;
             this.tipuscanvi=tipuscanvi;
             marxaAutomaticActual = null;
             marxaManualActual = null;
-            velocidadActual  = 0;
+            int velocidadActual = 0;
         }
 
         public marxaAutomatic getMarxaAutomaticActual() {
@@ -42,6 +43,13 @@ public abstract class CotxeAbstracte implements InterfaceCotxe {
             return marxaManualActual;
         }
 
+        public int getVelocidadActual() {
+            return velocidadActual;
+        }
+
+        public void setVelocidadActual(int velocidadActual) {
+            this.velocidadActual = velocidadActual;
+        }
         public void setMarxaManualActual(marxesManual marxaManualActual) {
             this.marxaManualActual = marxaManualActual;
         }

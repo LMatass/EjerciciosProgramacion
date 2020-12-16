@@ -30,15 +30,23 @@ public class TestCotxe_Lluc_Matas {
         System.out.println("Cotxe 2, BMW E46 manual. Prova de marxes : ");
         cotxe2.canviarMarxaManual('+');
         System.out.println(cotxe2.getMarxaManualActual());
+
         cotxe2.canviarMarxaManual('+');
         System.out.println(cotxe2.getMarxaManualActual());
+
         cotxe2.canviarMarxaManual('+');
         System.out.println(cotxe2.getMarxaManualActual());
+
         cotxe2.canviarMarxaManual('+');
         System.out.println(cotxe2.getMarxaManualActual());
+
         cotxe2.canviarMarxaManual('+');
         System.out.println(cotxe2.getMarxaManualActual());
+
         cotxe2.canviarMarxaManual('+');
         System.out.println(cotxe2.getMarxaManualActual());
+
+        cotxe2.velocitatActual();
+        System.out.println(cotxe2.getVelocidadActual() + " KMH");
     }
 }
