@@ -35,8 +35,8 @@ public class CotxeSegonaPart_Lluc_Matas extends Cotxe_Lluc_Matas{
     marxaAutomatic[] marxesAutomatic = {marxaAutomatic.R, marxaAutomatic.N, marxaAutomatic.F};
     marxesManual[] marxaManual = {marxesManual.R, marxesManual.N, marxesManual.Primera, marxesManual.Segona, marxesManual.Tercera, marxesManual.Quarta, marxesManual.Quinta, marxesManual.Sexta};
     //Creacion del contador, este contador tiene la funcion de reccorer las posiciones de las arrays
-    public short contador = 1;
-
+    public short contadorManual = 1;
+    public short contadorAutomatic = 1;
     public CotxeSegonaPart_Lluc_Matas(String marca, String model, TipusCanvi tipuscanvi, EstatsMotorCotxe estatsMotorCotxe) {
         super(marca, model, tipuscanvi, estatsMotorCotxe);
         marxaAutomaticActual = null;
@@ -47,13 +47,13 @@ public class CotxeSegonaPart_Lluc_Matas extends Cotxe_Lluc_Matas{
     public void canviarMarxaAutomatic(char a) throws Exception {
 
         if (TipusCanvi.CanviAutomatic.equals(tipuscanvi)){//Condicional If que comprueba que el cambio es automatico
-            if (a == '+' && estatsMotorCotxe.equals(EstatsMotorCotxe.EnMarxa) && contador < 3){//Condicional If que comprueba que el motor del coche este encendido y que el numero de marchas no supere el limite
-                contador++;
-                this.marxaAutomaticActual = marxesAutomatic[contador];//Asigna al valor de marcha actual el valor de la array en la posicion contador.
+            if (a == '+' && estatsMotorCotxe.equals(EstatsMotorCotxe.EnMarxa) && contadorAutomatic < 3){//Condicional If que comprueba que el motor del coche este encendido y que el numero de marchas no supere el limite
+                contadorAutomatic++;
+                this.marxaAutomaticActual = marxesAutomatic[contadorAutomatic];//Asigna al valor de marcha actual el valor de la array en la posicion contador.
             }
-            else if (a == '-' && estatsMotorCotxe.equals(EstatsMotorCotxe.EnMarxa) && contador > 0){//Condicional If que comprueba que el motor del coche este encendido y que el numero de marchas no es menor a 0
-                contador--;
-                this.marxaAutomaticActual = marxesAutomatic[contador];//Asigna al valor de marcha actual el valor de la array en la posicion contador.
+            else if (a == '-' && estatsMotorCotxe.equals(EstatsMotorCotxe.EnMarxa) && contadorAutomatic > 0){//Condicional If que comprueba que el motor del coche este encendido y que el numero de marchas no es menor a 0
+                contadorAutomatic--;
+                this.marxaAutomaticActual = marxesAutomatic[contadorAutomatic];//Asigna al valor de marcha actual el valor de la array en la posicion contador.
             }else {
                 throw new Exception("Introduzca una marcha adecuada o encienda el coche");//Lanza un error en el caso de que el caracter de la marcha no sea correcto o que el coche no este encendido
             }
@@ -66,13 +66,13 @@ public class CotxeSegonaPart_Lluc_Matas extends Cotxe_Lluc_Matas{
     public void canviarMarxaManual(char a) throws Exception {
 
         if (TipusCanvi.CanviManual.equals(tipuscanvi)){//Condicional If que comprueba que el cambio es automatico
-            if (a == '+' && estatsMotorCotxe.equals(EstatsMotorCotxe.EnMarxa) && contador < 7){//Condicional If que comprueba que el motor del coche este encendido y que el numero de marchas no supere el limite
-                contador++;
-                this.marxaManualActual = marxaManual[contador];//Asigna al valor de marcha actual el valor de la array en la posicion contador.
+            if (a == '+' && estatsMotorCotxe.equals(EstatsMotorCotxe.EnMarxa) && contadorManual < 7){//Condicional If que comprueba que el motor del coche este encendido y que el numero de marchas no supere el limite
+                contadorManual++;
+                this.marxaManualActual = marxaManual[contadorManual];//Asigna al valor de marcha actual el valor de la array en la posicion contador.
             }
-            else if (a == '-' && estatsMotorCotxe.equals(EstatsMotorCotxe.Aturat) && contador > 0){ //Condicional If que comprueba que el motor del coche este encendido y que el numero de marchas no es menor a 0
-                contador--;
-                this.marxaManualActual = marxaManual[contador]; //Asigna al valor de marcha actual el valor de la array en la posicion contador.
+            else if (a == '-' && estatsMotorCotxe.equals(EstatsMotorCotxe.Aturat) && contadorManual > 0){ //Condicional If que comprueba que el motor del coche este encendido y que el numero de marchas no es menor a 0
+                contadorManual--;
+                this.marxaManualActual = marxaManual[contadorManual]; //Asigna al valor de marcha actual el valor de la array en la posicion contador.
             }
 
             else {
