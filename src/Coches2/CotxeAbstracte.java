@@ -27,9 +27,6 @@ public abstract class CotxeAbstracte implements InterfaceCotxe {
             this.marca=marca;
             this.model=model;
             this.tipuscanvi=tipuscanvi;
-            marxaAutomaticActual = null;
-            marxaManualActual = null;
-            int velocidadActual = 0;
         }
 
         public marxaAutomatic getMarxaAutomaticActual() {

@@ -39,6 +39,9 @@ public class CotxeSegonaPart_Lluc_Matas extends Cotxe_Lluc_Matas{
 
     public CotxeSegonaPart_Lluc_Matas(String marca, String model, TipusCanvi tipuscanvi, EstatsMotorCotxe estatsMotorCotxe) {
         super(marca, model, tipuscanvi, estatsMotorCotxe);
+        marxaAutomaticActual = null;
+        marxaManualActual = null;
+        int velocidadActual = 0;
     }
 
     public void canviarMarxaAutomatic(char a) throws Exception {
