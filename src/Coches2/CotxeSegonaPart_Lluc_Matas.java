@@ -23,9 +23,9 @@ enum marxesManual {
     R,
     N,
     Primera,
-    Segunda,
+    Segona,
     Tercera,
-    Cuarta,
+    Quarta,
     Quinta,
     Sexta
 }
@@ -33,7 +33,7 @@ enum marxesManual {
 public class CotxeSegonaPart_Lluc_Matas extends Cotxe_Lluc_Matas{
     //Creacion de arrays de tipo enum
     marxaAutomatic[] marxesAutomatic = {marxaAutomatic.R, marxaAutomatic.N, marxaAutomatic.F};
-    marxesManual[] marxaManual = {marxesManual.R, marxesManual.N, marxesManual.Primera, marxesManual.Segunda, marxesManual.Tercera, marxesManual.Cuarta, marxesManual.Quinta, marxesManual.Sexta};
+    marxesManual[] marxaManual = {marxesManual.R, marxesManual.N, marxesManual.Primera, marxesManual.Segona, marxesManual.Tercera, marxesManual.Quarta, marxesManual.Quinta, marxesManual.Sexta};
     //Creacion del contador, este contador tiene la funcion de reccorer las posiciones de las arrays
     public short contador = 1;
 
@@ -88,11 +88,11 @@ public class CotxeSegonaPart_Lluc_Matas extends Cotxe_Lluc_Matas{
 
             if (marxaManualActual == marxesManual.Primera) { //Condicionales if que comprueban en que marcha esta el coche actualmente y dependediendo de la marcha generan un numero aleatorio entre dos numeros.
                 this.velocidadActual = (int) (Math.random() * 40 + 1);
-            } else if (marxaManualActual == marxesManual.Segunda) {
+            } else if (marxaManualActual == marxesManual.Segona) {
                 this.velocidadActual = (int) (Math.random() * 80 + 40);
             } else if (marxaManualActual == marxesManual.Tercera) {
                 this.velocidadActual = (int) (Math.random() * 120 + 80);
-            } else if (marxaManualActual == marxesManual.Cuarta) {
+            } else if (marxaManualActual == marxesManual.Quarta) {
                 this.velocidadActual = (int) (Math.random() * 160 + 120);
             } else if (marxaManualActual == marxesManual.Quinta) {
                 this.velocidadActual = (int) (Math.random() * 200 + 160);

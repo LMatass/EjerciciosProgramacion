@@ -14,5 +14,6 @@ package dates;/*
 */
 
 public abstract class DiesEntreDates_Lluc_Matas extends CalcularDiesEntreDates {
-
+        protected int diesMesDesti (){
+        }
 }
