@@ -22,7 +22,7 @@ public class DiesEntreDates_Lluc_Matas extends CalcularDiesEntreDates {
 
         @Override
         protected int diesMesInicial(DataXS dataXS) {
-            int dies = 0;
+            int dies;
             dies = diesMes(dataXS.mes)- dataXS.dia;
             return  dies;
         }
