@@ -1,7 +1,7 @@
 /*
   Ejercicios
   
-  Created by: ${PACKAGE_NAME}
+  Created by: Lluc Matas
 
   GitHub: https://github.com/LMatass
     
